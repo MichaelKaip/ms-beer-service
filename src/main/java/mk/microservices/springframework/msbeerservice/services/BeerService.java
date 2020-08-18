@@ -1,12 +1,17 @@
 package mk.microservices.springframework.msbeerservice.services;
 
 import mk.microservices.springframework.msbeerservice.web.model.BeerDto;
+import mk.microservices.springframework.msbeerservice.web.model.BeerPagedList;
+import mk.microservices.springframework.msbeerservice.web.model.BeerStyleEnum;
+import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;
 
 public interface BeerService {
 
-    BeerDto getById(UUID beerId);
+    BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest);
+
+    BeerDto getBeerById(UUID beerId);
 
     BeerDto saveNewBeer(BeerDto beerDto);
 
