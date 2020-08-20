@@ -9,7 +9,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>mk.microservices.springframework</groupId>
     <artifactId>ms-beer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ms-beer-service</name>
