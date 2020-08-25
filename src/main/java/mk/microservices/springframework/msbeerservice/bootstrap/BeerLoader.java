@@ -1,6 +1,7 @@
 package mk.microservices.springframework.msbeerservice.bootstrap;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import mk.microservices.springframework.msbeerservice.domain.Beer;
 import mk.microservices.springframework.msbeerservice.repositories.BeerRepository;
 import mk.microservices.springframework.msbeerservice.web.model.BeerStyleEnum;
@@ -8,8 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
+@Slf4j
 @RequiredArgsConstructor
 @Component
 public class BeerLoader implements CommandLineRunner {
