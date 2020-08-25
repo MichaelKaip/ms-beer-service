@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.MichaelKaip</groupId>
         <artifactId>brewery-bom</artifactId>
-        <version>v1.0</version>
+        <version>v1.0.1</version>
     </parent>
 
     <artifactId>ms-beer-service</artifactId>
@@ -47,6 +47,12 @@
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+
 
     </dependencies>
 
